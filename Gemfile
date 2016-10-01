@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+ruby "2.3.1"
+
+gem "dotenv-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -28,12 +31,16 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 gem 'stattleship-ruby'
 
 group :development, :test do
   gem 'awesome_print'
   gem 'pry-rails'
   gem 'pry-rescue'
+  gem "pry-byebug"
+  gem "rspec-rails"
+  gem "rspec-set"
 end
 
 group :development do

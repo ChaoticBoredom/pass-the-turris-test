@@ -1,0 +1,40 @@
+Style/AlignHash:
+  Description: >-
+                 Align the elements of a hash literal if they span more than
+                 one line.
+  Enabled: true
+  EnforcedHashRocketStyle: key
+  EnforcedLastArgumentHashStyle: always_inspect
+  SupportedLastArgumentHashStyles:
+    - always_inspect
+    - always_ignore
+    - ignore_implicit
+    - ignore_explicit
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/HashSyntax:
+  Description: >-
+                 Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax
+                 { :a => 1, :b => 2 }.
+  Enabled: true
+  EnforcedStyle: hash_rockets
+  SupportedStyles:
+    - ruby19
+    - hash_rockets
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  Enabled: true
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+    - single_quotes
+    - double_quotes
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+  SupportedStyles:
+    - comma
+    - no_comma
