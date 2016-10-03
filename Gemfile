@@ -32,11 +32,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "pry-rails"
+
 gem 'stattleship-ruby'
 
 group :development, :test do
   gem 'awesome_print'
-  gem 'pry-rails'
   gem 'pry-rescue'
   gem "pry-byebug"
   gem "rspec-rails"

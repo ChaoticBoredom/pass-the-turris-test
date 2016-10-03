@@ -13,5 +13,7 @@ module PassTheTurrisTest
     # -- all .rb files in that directory are automatically loaded.
     config.x.yahoo.client_id = ENV["YAHOO_CLIENT_ID"]
     config.x.yahoo.client_secret = ENV["YAHOO_CLIENT_SECRET"]
+
+    config.x.hostname = ENV["APP_HOST"]
   end
 end

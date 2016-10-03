@@ -2,5 +2,4 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "index" => "authorization#login"
   get "confirm_auth" => "authorization#confirm_auth"
-  get "success" => "authorization#success"
 end
